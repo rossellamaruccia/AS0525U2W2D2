@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <i class="bi bi-arrow-through-heart-fill m-2"></i>
+          <a class="navbar-brand" href="#">Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tutorials">Tutorials</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-12 text-bg-secondary py-3 px-4 border rounded-5">
+            <h1>we love Bootstrap</h1>
+            <p>It makes everything easier and faster</p>
+            <a href="https://getbootstrap.com/" class="btn btn-info">Try it!</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="row mx-2 justify-content-center">
+        <h1 id="features">Bootstrap's features</h1>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="./assets/bootstrap_card.jpg"
+              class="card-img-top"
+              alt="code"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Containers</h5>
+              <p class="card-text">
+                Containers are a fundamental building block of Bootstrap that
+                contain, pad, and align your content within a given device or
+                viewport.
+              </p>
+              <a
+                href="https://getbootstrap.com/docs/5.3/layout/containers/"
+                class="btn btn-primary"
+                target="_blank"
+                >Read about it</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <span class="badge rounded-pill text-bg-secondary position-absolute translate-middle start-100 z-1 ">New</span>
+            <img
+              src="./assets/bootstrap_card.jpg"
+              class="card-img-top"
+              alt="code"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Forms</h5>
+              <p class="card-text">
+                Bootstrap’s form controls expand on our Rebooted form styles
+                with classes. Use these classes to opt into their customized
+                displays for a more consistent rendering across browsers and
+                devices.
+              </p>
+              
+              <a
+                href="https://getbootstrap.com/docs/5.3/forms/overview/"
+                class="btn btn-primary"
+                target="_blank"
+                >Read about it</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="./assets/bootstrap_card.jpg"
+              class="card-img-top"
+              alt="code"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Carousel</h5>
+              <p class="card-text">
+                A slideshow component for cycling through elements—images or
+                slides of text—like a carousel.
+              </p>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/carousel/"
+                class="btn btn-primary"
+                target="_blank"
+                >Read about it</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="./assets/bootstrap_card.jpg"
+              class="card-img-top"
+              alt="code"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Navs & Tabs</h5>
+              <p class="card-text">
+                Documentation and examples for how to use Bootstrap’s included
+                navigation components.
+              </p>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/navs-tabs/"
+                class="btn btn-primary"
+                target="_blank"
+                >Read about it</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+
+      <div class="row mx-2 justify-content-center">
+        
+        <div class="col col-sm-12 col-md-5 col-lg-8 col-xl-6">
+          <img src="./assets/grid.jpg" class="img-fluid border rounded-5 shadow-lg" alt="grid"/>
+        </div>
+        <div class="col col-sm-12 col-md-7 col-lg-4 col-xl-6">
+            <h1 id="tutorials">BS Grid System</h1>
+          <p>
+            Bootstrap’s grid system uses a series of containers, rows, and
+            columns to layout and align content. It’s built with flexbox and is
+            fully responsive. Below is an example and an in-depth explanation
+            for how the grid system comes together.
+          </p>
+          <p>Breaking it down, here’s how the grid system comes together:</p>
+          <ul>
+            <li>
+              Our grid supports six responsive breakpoints. Breakpoints are
+              based on min-width media queries, meaning they affect that
+              breakpoint and all those above it (e.g., .col-sm-4 applies to sm,
+              md, lg, xl, and xxl). This means you can control container and
+              column sizing and behavior by each breakpoint.
+            </li>
+            <li>
+              Containers center and horizontally pad your content. Use
+              .container for a responsive pixel width, .container-fluid for
+              width: 100% across all viewports and devices, or a responsive
+              container (e.g., .container-md) for a combination of fluid and
+              pixel widths.
+            </li>
+            <li>
+              Rows are wrappers for columns. Each column has horizontal padding
+              (called a gutter) for controlling the space between them. This
+              padding is then counteracted on the rows with negative margins to
+              ensure the content in your columns is visually aligned down the
+              left side. Rows also support modifier classes to uniformly apply
+              column sizing and gutter classes to change the spacing of your
+              content.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
